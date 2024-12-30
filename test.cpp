@@ -244,41 +244,66 @@
 
 //Write a C++ program to implement a class called Date that has private member variables for day, month, and year. Include member functions to set and get these variables, as well as to validate if the date is valid.
 
+// #include<iostream>
+// using namespace std;
+
+// class Date{
+//       int day;
+//       int month;
+//       int year;
+       
+//       public:
+//              Date(){
+
+//              }
+//              Date(int d,int m,int y){
+//                  day=d;
+//                  month=m;
+//                  year=y;
+//              }
+
+//              void print(){
+//                 if(day>=1&& day<=31 && month>=1 && month<=12 ){
+//                    cout<<day<<"/"<<month<<"/"<<year;
+//                 } else{
+//                     cout<<"invalid";
+//                 }
+               
+//              }
+// };
+// int main(){
+//      Date d1(21,22,2024);
+//      d1.print();
+      
+
+//     return 0;
+// }
+
+
+
+
 #include<iostream>
 using namespace std;
 
-class Date{
-      int day;
-      int month;
-      int year;
-       
+class Bhopal{
+    int mile;
       public:
-             Date(){
+             Bhopal(int m){mile=m;}
 
-             }
-             Date(int d,int m,int y){
-                 day=d;
-                 month=m;
-                 year=y;
-             }
-
-             void print(){
-                if(day>=1&& day<=31 && month>=1 && month<=12 ){
-                   cout<<day<<"/"<<month<<"/"<<year;
-                } else{
-                    cout<<"invalid";
-                }
-               
+             operator - (Bhopal &obj){
+                 
+                 mile=obj.mile-mile;
+                 cout<<mile;
              }
 };
+
 int main(){
-     Date d1(21,22,2024);
-     d1.print();
       
+      Bhopal s(5000);
+      Bhopal e(8000);
 
+      s-e;
+    
     return 0;
+
 }
-
-
-
-
