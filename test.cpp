@@ -155,42 +155,42 @@
 
 //6. Write a C++ program to create a class called Triangle that has private member variables for the lengths of its three sides. Implement member functions to determine if the triangle is equilateral, isosceles, or scalene.
 
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class Triangle{
+class Triangle{
       
-//       double s1;
-//       double s2;
-//       double s3;
+      double s1;
+      double s2;
+      double s3;
 
-//       public:
-//              Triangle(double side1,double side2,double side3){
-//                 s1=side1;
-//                 s2=side2;
-//                 s3=side3;
-//              }
+      public:
+             Triangle(double side1,double side2,double side3){
+                s1=side1;
+                s2=side2;
+                s3=side3;
+             }
 
-//           void determine();   
+          void determine();   
                   
-// };
-//   void Triangle::determine(){
-//       if(s1==s2 && s1==s3 && s2==s3){
-//         cout<<"Triangle is Equilateral"<<endl;
+};
+  void Triangle::determine(){
+      if(s1==s2 && s1==s3 && s2==s3){
+        cout<<"Triangle is Equilateral"<<endl;
 
-//       } else if(s1==s2 || s1==s3){
-//         cout<< "isoscales triangle"<<endl;
-//       } else{
-//         cout<<"scalene triangle";
-//       }
-//   }
+      } else if(s1==s2 || s1==s3){
+        cout<< "isoscales triangle"<<endl;
+      } else{
+        cout<<"scalene triangle";
+      }
+  }
 
-// int main(){
+int main(){
 
-//    Triangle t1(5,0,2);
-//    t1.determine();
-//     return 0;
-// }
+   Triangle t1(5,6,5);
+   t1.determine();
+    return 0;
+}
 
 //7. Write a C++ program to implement a class called Employee that has private member variables for name, employee ID, and salary. Include member functions to calculate and set salary based on employee performance.
 
@@ -282,28 +282,61 @@
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class Bhopal{
-    int mile;
-      public:
-             Bhopal(int m){mile=m;}
+// class Bhopal{
+//     int mile;
+//       public:
+//              Bhopal(int m){mile=m;}
 
-             operator - (Bhopal &obj){
+//              operator - (Bhopal &obj){
                  
-                 mile=obj.mile-mile;
-                 cout<<mile;
-             }
-};
+//                  mile=obj.mile-mile;
+//                  cout<<mile;
+//              }
+// };
 
-int main(){
+// int main(){
       
-      Bhopal s(5000);
-      Bhopal e(8000);
+//       Bhopal s(5000);
+//       Bhopal e(8000);
 
-      s-e;
+//       s-e;
     
-    return 0;
+//     return 0;
 
-}
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// class MyClass {
+// private:
+//     static int objectCount; // Static member variable to count objects
+
+// public:
+//     // Constructor
+//     MyClass() {
+//         objectCount++; // Increment the count when an object is created
+//     }
+
+//     // Static member function to display the count of objects
+//     static void count() {
+//         cout << "Number of objects created: " << objectCount << endl;
+//     }
+// };
+
+// // Initialize the static member variable
+// int MyClass::objectCount = 0;
+
+// int main() {
+//     MyClass obj1; // Create first object
+//     MyClass obj2; // Create second object
+//     MyClass obj3; // Create third object
+
+//     // Call the static member function to display the count
+//     MyClass::count(); // Output: Number of objects created: 3
+
+//     return 0;
+// }
