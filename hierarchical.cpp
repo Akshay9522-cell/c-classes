@@ -37,13 +37,13 @@ int main(){
     a1.axis();
     a1.rbi();
 
-    Sbi s1;
-    s1.rbi();
-    s1.sbi();
+    // Sbi s1;
+    // s1.rbi();
+    // s1.sbi();
 
-    Pnb p1;
-    p1.pnb();
-    p1.rbi();
+    // Pnb p1;
+    // p1.pnb();
+    // p1.rbi();
 
     return 0;
 }

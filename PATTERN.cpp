@@ -86,3 +86,26 @@
 //      }
 // }
 
+
+#include<iostream>
+using namespace std;
+
+class Table{
+    public:
+           int num;
+
+           Table(int n):num(n){}
+
+           void print(){
+            for(int i=1;i<=10;i++){
+                cout<<num*i<<endl;
+            }
+            cout<<endl;
+           } 
+};
+
+int main(){
+
+    Table t1(5);
+    t1.print();
+}
